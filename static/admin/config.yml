@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: your-github-username/caringhearts-test
   branch: main
+  base_url: https://random-name.netlify.app
 
 media_folder: static/img
 public_folder: /img
