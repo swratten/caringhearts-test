@@ -1,0 +1,33 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: pages
+    label: Pages
+    files:
+      - name: home
+        label: Home Page
+        file: content/_index.md
+        fields:
+          - { label: Hero Heading, name: hero_heading, widget: string }
+          - { label: Hero Subtext, name: hero_subtext, widget: string }
+          - { label: About Text, name: about_text, widget: text }
+          - label: Services
+            name: services
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+          - { label: Mission Statement, name: mission, widget: text }
+          - { label: Address, name: address, widget: text }
+          - { label: Phone, name: phone, widget: string }
+      - name: contact
+        label: Contact Page
+        file: content/contact.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
