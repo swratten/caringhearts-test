@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: your-github-username/caringhearts-test
+  name: git-gateway
   branch: main
-  base_url: https://sparkling-smakager-3e86ba.netlify.app
 
 media_folder: static/img
 public_folder: /img
