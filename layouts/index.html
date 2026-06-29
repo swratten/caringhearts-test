@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }}</title>
+</head>
+<body>
+  <nav><a href="/admin/">CMS Admin ↗</a></nav>
+  <h1>{{ .Params.hero_heading }}</h1>
+  <p>{{ .Params.hero_subtext }}</p>
+  <p>{{ .Params.about_text }}</p>
+  <h2>Services</h2>
+  {{ range .Params.services }}
+  <h3>{{ .title }}</h3>
+  <p>{{ .description }}</p>
+  {{ end }}
+  <h2>Our Mission</h2>
+  <p>{{ .Params.mission }}</p>
+  <address>{{ .Params.address }}<br>Phone: {{ .Params.phone }}</address>
+</body>
+</html>
