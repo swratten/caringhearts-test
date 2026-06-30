@@ -1,34 +1,56 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Title }}</title>
-</head>
-<body>
-  <nav><a href="/admin/">CMS Admin ↗</a></nav>
-  <h1>{{ .Params.hero_heading }}</h1>
-  <p>{{ .Params.hero_subtext }}</p>
-  <p>{{ .Params.about_text }}</p>
-  <h2>Services</h2>
-  {{ range .Params.services }}
-  <h3>{{ .title }}</h3>
-  <p>{{ .description }}</p>
-  {{ end }}
-  <h2>Our Mission</h2>
-  <p>{{ .Params.mission }}</p>
-  <address>{{ .Params.address }}<br>Phone: {{ .Params.phone }}</address>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
-</body>
-</html>
+{{ define "main" }}
+<div class="pv5 pv6-l ph3 bg-center cover" style="background-image: url('/img/tobias-tullius-0t9mkfyen5m-unsplash.jpg')">
+  <div class="mw7 center ph3">
+    <div class="db mb3">
+      <div class="mw7 relative bg-fix-primary mb3">
+        <h1 class="f2 f1-l b di lh-title mb3 white mw6">{{ .Params.hero_heading }}</h1>
+      </div>
+      <div class="mw7 relative bg-fix-primary">
+        <p class="b f4 di lh-title mb3 white mw6">{{ .Params.hero_subtext }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-off-white pv4">
+  <div class="ph3 mw7 center">
+    <h2 class="f2 b lh-title mb2">What we offer</h2>
+    <p class="mb4 mw6">{{ .Params.about_text }}</p>
+  </div>
+</div>
+
+<div class="pv5 pv6-l ph3 bg-center cover" style="background-image: url('/img/toa-heftiba-_uivmibb3ju-unsplash.jpg')">
+  <div class="mw7 center ph3">
+    <div class="mw7 relative bg-fix-primary mb3">
+      <h1 class="f2 f1-l b di lh-title mb3 white mw6">Our Services</h1>
+    </div>
+  </div>
+</div>
+
+<div class="bg-off-white pv4">
+  <div class="ph3 mw7 center">
+    <div class="flex-ns flex-wrap-ns mhn2-ns">
+      {{ range .Params.services }}
+      <div class="ph2-ns w-50-ns mb3">
+        <h2 class="f3 b lh-title mb2">{{ .title }}</h2>
+        <p>{{ .description }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+<div class="bg-grey-1 pv4">
+  <div class="ph3 mw7 center">
+    <div class="flex-l mhn2-l">
+      <div class="w-40-l ph2-l">
+        <h2 class="f2 b lh-title mb2">Our Mission</h2>
+        <p>{{ .Params.mission }}</p>
+      </div>
+      <div class="w-60-l ph2-l">
+        <img src="/img/rajesh-rajput-mwp6okw5twk-unsplash.jpg" alt="" class="mb3">
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
