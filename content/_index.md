@@ -2,22 +2,23 @@
 title: Caring Hearts - Counselling Services
 hero_heading: Counselling
 hero_subtext: Individuals, Families & Couples Counselling in Dunedin, NZ
-about_text: I have over 22 years of experience working as a therapist alongside
+about_text: >-
+  I have over 22 years of experience working as a therapist alongside
   individuals, families and couples, addressing a wide range of issues such as
   stress, trauma, anxiety, depression, workplace conflicts and challenges in
-  relationships. I also offer provisional supervision. As a member of the New
-  Zealand Association of Counsellors (NZAC) and a Registered Practitioner Member
-  (Level 1 & 2) of the International BWRT Institute (UK), specialising in Brain
-  Working Recursive Therapy (BWRT), I am committed to fostering a safe,
-  confidential, and supportive environment for clients to explore their concerns
-  and develop practical strategies. I use an eclectic approach to therapy,
-  however I am passionate about Neuroscience based therapy. BWRT is a completely
-  personalised therapy that works with specific pathways in the brain formed
-  because of prolonged exposure to stressful situations or trauma. Other
-  modalities such as CBT, Solution Focused Brief Therapy, Positive Psychology
-  and Mindfulness are also utilised. I have also conducted organisational
-  training workshops on stress management, effective communication, work/life
-  balance and parenting.
+  relationships. I also offer provisional supervision. 
+
+
+  As a member of the New Zealand Association of Counsellors (NZAC) and a Registered Practitioner Member (Level 1 & 2) of the International BWRT Institute (UK), specialising in Brain Working Recursive Therapy (BWRT), I am committed to fostering a safe, confidential, and supportive environment for clients to explore their concerns and develop practical strategies. 
+
+
+  I use an eclectic approach to therapy, however I am passionate about Neuroscience based therapy. BWRT is a completely personalised therapy that works with specific pathways in the brain formed because of prolonged exposure to stressful situations or trauma. 
+
+
+  Other modalities such as CBT, Solution Focused Brief Therapy, Positive Psychology and Mindfulness are also utilised. 
+
+
+  I have also conducted organisational training workshops on stress management, effective communication, work/life balance and parenting.
 services:
   - title: What to expect
     description: The key element of effective therapy is the engagement process. Our
