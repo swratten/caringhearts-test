@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="bg-off-white pv5">
+  <div class="ph3 mw7 center">
+    <div class="flex-ns mhn2-ns">
+      <div class="ph2-ns w-100">
+        <img src="/img/caringhearts.svg" alt="Caring Hearts" class="db w4 mb4">
+        <p class="f4 mb4">{{ .Params.intro_text }}</p>
+        <div class="flex-ns flex-wrap-ns mhn2-ns">
+          <div class="ph2-ns w-50-ns mb4">
+            <h3 class="f4 b mb2">Location</h3>
+            <p>{{ .Params.location }}</p>
+          </div>
+          <div class="ph2-ns w-50-ns mb4">
+            <h3 class="f4 b mb2">Phone</h3>
+            <p>{{ .Params.phone }}</p>
+          </div>
+          <div class="ph2-ns w-50-ns mb4">
+            <h3 class="f4 b mb2">Appointments</h3>
+            <p>{{ .Params.appointments }}</p>
+          </div>
+          <div class="ph2-ns w-50-ns mb4">
+            <h3 class="f4 b mb2">Email</h3>
+            <p><a href="mailto:{{ .Params.email }}" class="link dim dark-gray">{{ .Params.email }}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
