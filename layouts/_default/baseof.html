@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff">
+  <meta property="og:type" content="business.business">
+  <meta property="og:title" content="{{ .Title }}">
+  <title>{{ .Title }}</title>
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+</head>
+<body class="sans-serif">
+<nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative">
+  <a href="/" class="pa3 db mr4 h-100 w4 flex-none">
+    <img src="/img/caringhearts.svg" alt="Caring Hearts logo" class="br0 db mb0 w-100"/>
+  </a>
+  <ul class="flex b grey-3">
+    <li><a href="/contact" class="pa3 no-underline db">Contact</a></li>
+  </ul>
+</nav>
+{{ block "main" . }}{{ end }}
+<footer class="bg-black ph3 pv4 white">
+  <div class="mw7 center pt3">
+    <div class="measure-narrow center mb4">
+      <img src="/img/caringhearts_white.svg" alt="Caring Hearts" class="db w5 center mb4 br0">
+      <p class="f3 lh-title light-gray b tc mb2">Locate Us</p>
+      <p>Level 2, Victoria Chambers<br>
+        7 Crawford Street<br>
+        Dunedin<br>
+        Phone: 022 127 8354</p>
+    </div>
+  </div>
+</footer>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>
