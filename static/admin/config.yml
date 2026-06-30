@@ -16,7 +16,7 @@ collections:
           - { label: Page Title, name: title, widget: string }
           - { label: Hero Heading, name: hero_heading, widget: string }
           - { label: Hero Subtext, name: hero_subtext, widget: string }
-          - { label: About Text, name: about_text, widget: text }
+          - { label: About Text, name: about_text, widget: markdown }
           - label: Services
             name: services
             widget: list
