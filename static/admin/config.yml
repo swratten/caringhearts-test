@@ -1,5 +1,6 @@
 backend:
   name: github
+  repo: swratten/caringhearts-test
   branch: main
   base_url: https://sveltia-cms-auth.s-wratten89.workers.dev
 
